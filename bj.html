@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioJack</title>
+  <link type="text/css" rel="stylesheet" href="projethtmlDJWP.css"/>
+</head>
+
+<body>
+  <div class="page">
+  <h1>
+    <a>BioJack</a>
+  </h1>
+
+<div id="message" class="message"></div>
+
+<div id="Boardgame">
+  <div class="dealer-card">
+    <h2>DataBank's Dealer</h2>
+    <div class="card cd1" id="dcd1"></div>
+    <div class="card flipped cd2" id="dcd2"></div>
+    <div class="new-cards-dealer" id=ncd></div>
+    <div class="clear"></div>
+    <div id="dealerTot" class="dealer-tot"></div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="player-card">
+    <h2>Player's cards</h2>
+    <div class="card cd1" id=pcd1></div>
+    <div class="card cd2" id=pcd2></div>
+    <div class="new-cards" id=ncp></div>
+    <div class="clear"></div>
+    <div id="playerTot" class="player-tot"></div>
+  </div>
+</div>
+
+
+<div class="buttons">
+  <button class="btn" id="hit"> Hit </button>
+  <button class="btn" id="rest"> Stand </button>
+  <button class="btn" id="retry"> Deal </button>
+  <button class="helpp" id="modalbtn"> ? </button>
+</div>
+
+<div class=modalq id=ruules>
+  <div class="modal-content">
+    <div class="modal-header">
+  <h2>The rules of BioJack</h2>
+  </div>
+  <div class="modal-body">
+  <p>BioJack is a comparing card game between a player -you-, and the dealer, played with a deck of 52 cards. There are three ways to achieve victory :<br>
+  <br>
+  1/ Get 21 with your first two cards.<br>
+  2/ Reach a higher score than the dealer, without exceeding 21.<br>
+  3/ Let the dealer draw additonal cards and have its hand exceed 21.<br>
+  <br>
+  Dealer and player are each dealt two cards. One of the dealer's card is hidden, as well as its score. Chose to <b>hit</b> to get new cards and increase your score, or to <b>stand</b> to keep your current score and hope for the best !
+  <br>
+  </p>
+  </div>
+        <div class="modal-footer">
+  <button class="btn close" data-dismiss="momo" id="close" >Close</button>
+        </div>
+  </div>
+</div>
+</div>
+
+
+<script src="projethtmlDJWP.js"></script>
+</body>
+</html>
